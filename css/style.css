@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  display: block;
+}
+.wrapBg {
+  margin: auto;
+  max-width: 720px;
+  box-shadow: 0 0 10px #ccc;
+}
+.relative {
+  position: relative;
+}
+.slick_01 {
+  width: 90%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.oil {
+  position: absolute;
+  width: 10%;
+  animation: floating 2s ease-in-out infinite;
+}
+.oil:nth-of-type(1) {
+  top: 20%;
+  left: 7%;
+}
+.oil:nth-of-type(2) {
+  top: 38%;
+  left: 84%;
+  animation-delay: 0.3s;
+}
+.oil:nth-of-type(3) {
+  top: 45%;
+  left: 35%;
+  animation-delay: 0.6s;
+}
+.oil:nth-of-type(4) {
+  top: 60%;
+  left: 50%;
+  animation-delay: 0.9s;
+}
+.tab_radios {
+  display: flex;
+  position: absolute;
+  top: 27%;
+  padding: 0 2%;
+}
+.tab_radio {
+  cursor: pointer;
+}
+.tab_contents {
+  position: absolute;
+  bottom: 2%;
+}
+.offer_btn {
+  position: absolute;
+  width: 90%;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.msg {
+  position: absolute;
+  transition: all 1s;
+}
+.msg:nth-of-type(1) {
+  width: 30%;
+  top: 3%;
+  left: 2%;
+  transform-origin: bottom right;
+}
+.msg:nth-of-type(2) {
+  width: 30%;
+  top: 7%;
+  left: 67%;
+  transform-origin: bottom left;
+}
+.msg:nth-of-type(3) {
+  width: 28%;
+  top: 24%;
+  left: 4%;
+  transform-origin: top right;
+}
+.msg:nth-of-type(4) {
+  width: 43%;
+  top: 24%;
+  left: 55%;
+  transform-origin: center left;
+}
+.msg_invisible {
+  opacity: 0;
+  transform: scale(0);
+}
+.hashtag {
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+}
+.user01_01 {
+  width: 53%;
+  top: 38.5%;
+  left: 2%;
+}
+.user01_02 {
+  width: 57%;
+  top: 40.5%;
+  left: 11%;
+}
+.user02_01 {
+  width: 61%;
+  top: 64%;
+  left: 3%;
+}
+.user02_02 {
+  width: 48%;
+  top: 66%;
+  left: 20%;
+}
+.user02_03 {
+  width: 43%;
+  top: 68%;
+  left: 30%;
+}
+.user02_03 {
+  width: 43%;
+  top: 68%;
+  left: 30%;
+}
+.user03_01 {
+  width: 66%;
+  top: 92.5%;
+  left: 3%;
+}
+.user03_02 {
+  width: 62%;
+  top: 94.5%;
+  left: 12%;
+}
+.arrow {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: all 1s;
+}
+.timg_point {
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+  transition: all 1s;
+}
+.timing {
+  position: absolute;
+  width: 16%;
+  right: 1%;
+  animation: shake 2s ease-in-out infinite;
+}
+.timing:nth-of-type(1) {
+  top: 31.5%;
+}
+.timing:nth-of-type(2) {
+  top: 74.5%;
+  animation-delay: 0.3s;
+}
+.QA_btn {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
