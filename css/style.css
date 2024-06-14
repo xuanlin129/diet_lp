@@ -6,12 +6,14 @@
 img,
 video {
   width: 100%;
+  height: auto;
   display: block;
 }
 .wrapBg {
   margin: auto;
-  max-width: 720px;
+  max-width: 980px;
   box-shadow: 0 0 10px #ccc;
+  overflow-x: hidden;
 }
 .relative {
   position: relative;
@@ -55,6 +57,10 @@ video {
 }
 .tab_radio {
   cursor: pointer;
+  transform-origin: bottom;
+}
+.tab_bounce {
+  animation: bounce 1s ease-in-out infinite;
 }
 .tab_contents {
   position: absolute;
@@ -146,6 +152,7 @@ video {
 }
 .arrow {
   position: absolute;
+  width: 17%;
   top: 20%;
   right: 0;
   transform-origin: top right;
@@ -153,13 +160,11 @@ video {
   transition: all 1s;
 }
 .timg_point {
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 10%;
-  right: 10%;
-  transform-origin: bottom;
-  transform: rotateX(90deg);
-  transition: all 1s;
+  right: 15%;
+  animation: shake 2s ease-in-out infinite;
 }
 .timing {
   position: absolute;
@@ -180,6 +185,18 @@ video {
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%) rotateX(30deg);
+  }
+  50% {
+    transform: translateY(-5%) rotateX(0deg);
+  }
+  100% {
+    transform: translateY(0%) rotateX(30deg);
+  }
 }
 
 @keyframes floating {

@@ -1,11 +1,14 @@
 // 頁籤
 $('.tab_content').hide()
 $('.tab_content').eq(0).show()
+$('.tab_radio').eq(0).addClass('tab_bounce')
 
 $('.tab_radio').each(function (i, radio) {
   $(radio).on('click', function () {
     $('.tab_content').hide()
+    $('.tab_radio').removeClass('tab_bounce')
     $('.tab_content').eq(i).fadeIn()
+    $('.tab_radio').eq(i).addClass('tab_bounce')
   })
 })
 
